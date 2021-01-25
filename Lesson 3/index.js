@@ -1,20 +1,20 @@
 function worker (x){
- let max = 0;
+//  let max = Object.entries(x);
+let max =0;
  let value = 0;
     for(let key in x){
-        if (x[key].unit == "$"){
-            value = x[key].salary * 520 + "֏"; 
-            console.log(value);
+
+        if(x[key].unit == "֏"){
+            value = x[key].salary;
+       }
+        else if (x[key].unit == "$"){
+            value = x[key].salary * 520; 
         }
-       else if (x[key].unit == "₽" ){ 
-            console.log(key);
-            value = x[key].salary * 8 + "֏";
-            console.log(value);
+        else if (x[key].unit == "₽" ){ 
+            value = x[key].salary * 8 ;
         }  
-        else value = x[key].salary + "֏";
-        
-        if(x[key].salary > max){
-         max = 'maxNumber:'+ ' ' + x[key].salary;    
+        if(value > max){
+            max = 'maxNumber:'+ ' ' + value;    
         }
     }
      return max;
