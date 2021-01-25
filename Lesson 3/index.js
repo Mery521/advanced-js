@@ -1,6 +1,5 @@
 function worker (x){
-//  let max = Object.entries(x);
-let max =0;
+ let max =0;
  let value = 0;
     for(let key in x){
 
