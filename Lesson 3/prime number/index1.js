@@ -20,3 +20,4 @@ let count = 0;
     return count;
 }
 isPrime(100);
+
