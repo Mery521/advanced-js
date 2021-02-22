@@ -1,0 +1,56 @@
+
+body {
+    inset: 0;
+    position: absolute;
+    background-color: white;
+    transition: background 0.5s ease;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    color: white;
+}
+.dark-mode {
+    background-color: #353434;
+}
+.btn {
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 3px;
+    font-family: 'Comfortaa', cursive;
+    transform: translate(420px, 200px);
+    margin: 5px 10px 5px;
+}
+.btn-promotion {
+    background-image: repeating-radial-gradient(10px 10px at var(--x, 50%) var(--y, 50%),
+            rgb(15, 47, 226),
+            transparent);
+}
+.btn-brand {
+    background-image: radial-gradient(10px 10px at var(--x, -10px) var(--y, -10px),
+            rgb(241, 89, 19),
+            transparent);
+}
+.btn-tertiary {
+    background: #256102;
+}
+.btn-tertiary:hover {
+    background: linear-gradient(to right, rgb(192, 243, 219), rgb(216, 231, 224));
+}
+.btn-primary {
+    background: #065d7c;
+}
+.btn-secondary {
+    background: #11b4f02a;
+}
+/* sizes */
+.btn-small{
+    width: 8%;
+    height: 8%;
+}
+.btn-middle{
+    width: 10%;
+    height: 10%;
+}
+.btn-large{
+    width: 15%;
+    height: 10%;
+}
