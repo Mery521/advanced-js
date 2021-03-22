@@ -1,0 +1,86 @@
+<!-- <h1>Hello 
+    <%= username %> <%= surname %> </h1> -->
+
+<!-- style -->
+<style>
+
+    div{background-color: #555555;
+    color:antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+/*menu mas 1*/
+
+.nav{
+	z-index: 999;
+	/*menu amracnume ejin*/
+	position: fixed;
+	width: 100%;
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(247, 210, 227);
+font-family: URW Chancery L, cursive;
+}
+.menu{
+	overflow: hidden;
+	list-style: none;
+	padding: 0px 10px;
+	display: flex;
+	font-size: 20px;
+	font-family:Courier, monospace ;
+}
+/*.box1 li{
+	float: left;
+}*/
+.menu li a{
+	color: #d383c2;
+	text-decoration: none;
+	padding: 10px 10px;
+	display: block;
+
+}
+.menu li a:hover{
+	background-color:rgb(216, 75, 133) ;
+	color:blueviolet ;
+}
+
+.text{
+	position: absolute;
+	top: 200px;
+	left: 350px;
+	font-size: 15px;
+font-family: cursive;
+}
+.p{
+	font-size: 25px;
+	color: white;
+	margin: 25px;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	
+}
+.text p{
+	margin-left: 20px;
+}
+</style>
+
+
+<!-- avart -->
+ 
+<nav class="nav">
+        <ul class="menu">
+            <li><a href='/index'>Logout</a></li>
+        </ul>
+            
+    </nav>
+    
+    <div class="text">
+        <p class="p">
+            Start something that matters
+            </p>
+</nav>
+
+<!-- <div><a href="/index">Logout</a> -->
+
+    <!-- </div> -->

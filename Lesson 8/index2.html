@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    input{
+      margin: 5px;
+    }
+  </style>
+</head>
+<body> 
+
+  <form> 
+    1st Number:<input id="input1" type='text' placeholder='number'><br>
+    2nd Number:<input id="input2" type='text' placeholder='number'><br>
+    <input  type='button' id="multButton"  value="Multiply">
+    <input  type='button' id="divideButton" value="Divide">
+
+  </form> 
+  <p>The Result is</p>
+  <p id="result"></p>
+
+<script>
+    const result = document.getElementById("result");
+let input1 = document.getElementById('input1')
+let input2 = document.getElementById('input2')
+const multButton = document.getElementById('multButton');
+const divideButton = document.getElementById('divideButton');
+
+multButton.addEventListener('click',()=>{
+    result.innerText = (input1.value * input2.value).toFixed()
+});
+divideButton.addEventListener('click',()=>{
+    result.innerText = (input1.value / input2.value).toFixed();
+});
+</script>
+</body>
+</html>

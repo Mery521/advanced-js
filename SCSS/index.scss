@@ -1,0 +1,40 @@
+$primary-color: #595889;
+$text-paragraph: 16px;
+
+$text-2xl: 16px;
+$text-s: 12px;
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    header {
+      background-color: lightblue;
+      h1 {
+        color: $primary-color;
+      }
+    }
+    .block {
+      padding: 20px 50px;
+      h2 {
+        // style
+      }
+    }
+    .block-1 {
+      h2 {
+        // style
+      }
+    }
+    .block-2 {
+      h2 {
+        // style
+      }
+    }
+    .block-3 {
+      h2 {
+        // style
+      }
+    }
+  }
+
+  //css default popxakan
+
+  //sass uni ir popoxakannery

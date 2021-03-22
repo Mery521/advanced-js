@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.container header {
+  background-color: lightblue;
+}
+
+.container header h1 {
+  color: #595889;
+}
+
+.container .block {
+  padding: 20px 50px;
+}
+/*# sourceMappingURL=index.css.map */
