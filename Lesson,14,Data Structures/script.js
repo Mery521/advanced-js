@@ -9,6 +9,7 @@ class Node {
       this.head = head;
       this._size = head ? 1 : 0;
     } 
+      
     add(data) {
       if (!this.head) {
         this.head = new Node(data);
@@ -21,6 +22,7 @@ class Node {
       lastNode.next = new Node(data);
       this._size++;
     }
+      
     insertAt(data, index) {
       if (index > this._size) return false;
       if (index === this._size) {
@@ -38,44 +40,45 @@ class Node {
       node.next = newNode;
       this._size++;
     }
+      
     size() {
       return this._size;
     }
+      
     clear() {
       this.head = null;
     }
-
+      
     isEmpty() {
-       if(this.head == null){
-          return true
-        }
-        return false
-         
+       return this.head === null  
     }
+      
     printList(){
-        let list = this.head;
-        while(list !== null){
-          document.write(list.data + " >> ");
-          list = list.next;
+        let node = this.head;
+        while(node !== null){
+          document.write(node.data + " >> ");
+          node = node.next;
         }
     }
+
     getNode(index) {
-        let findIndex = this.head;
-        let q = 0;
-        while (index > q) {
-          findIndex = findIndex.next;
-          q++;
+        let node = this.head;
+        let nodeIndex = 0;
+        while (index > nodeIndex) {
+          node = node.next;
+          nodeIndex++;
         }
-        return findIndex;
-      }
+        return node;
+    }
 
     getLast(){
-      let findLastNode = this.head;
-      while (findLastNode.next) {
-        findLastNode = findLastNode.next;
+      let node = this.head;
+      while (node.next) {
+        node = node.next;
       }
-      return findLastNode;
+      return node;
     }
+      
     removeFrom(index){
       let removeIndex = this.getNode(index);
       while(removeIndex.next == null){
