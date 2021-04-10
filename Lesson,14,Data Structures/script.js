@@ -80,21 +80,47 @@ class Node {
     }
       
     removeFrom(index){
-      let removeIndex = this.getNode(index);
-      while(removeIndex.next == null){
-        this._size--;
+      if(index < 0 || index > this._size - 1) return false;
+
+      if(index === 0){
+        this._removeNode(this.head)
+        return true;
       }
-      return removeIndex;
+
+      const prevNode = this.getNode(index - 1);
+      this._removeNode(prevNode)
+      return true;
     }
 
-    // removeNode(node) {
-    //   let removeNode = this.head;
-    //   while(removeNode.next == null){
-    //    ...
-    //   }
-    //   return removeNode;
-    // }
+    removeNode(node) {
+      if(node === this.head){
+        this._removeNode(node)
+        return true;
+      }
+
+      let tempNode = this.head;
+      while(tempNode && tempNode.next !== node){
+        tempNode = tempNode.next;
+      }
+        
+      if(tempNode) {
+          this._removeNode(tempNode)
+          return true;
+      }
+
+      return false;
+    }
+
+    _removeNode(prevNode){
+         if(prevNode === this.head){
+            this.head = this.head.next;
+         } else {
+            prevNode.next = prevNode.next.next
+         }
+         this._size--;
+    }
 }
+
   const linkedList = new LinkedList(new Node(4));
   linkedList.add(8);
   linkedList.add(16);
