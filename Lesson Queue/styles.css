@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.btn {
+
+} 
+
+.btn-enqueue {
+
+}
+
+.btn-dequeue {
+
+}
+
+.queue {
+    display: flex;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+.element {
+    height: 100%;
+    width: 50px;
+    margin-right: 5px;
+    background-color: grey;
+}
+

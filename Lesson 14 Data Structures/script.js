@@ -46,10 +46,7 @@ class Node {
     }
 
     isEmpty() {
-       if(this.head == null){
-          return true
-        }
-        return false
+       return this.head === null;
          
     }
     printList(){
