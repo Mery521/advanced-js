@@ -16,7 +16,3 @@ console.log(add5(2)); //7
 const multi2 = partial(multi,2);
 //fixesinq 1 parametry
 console.log(multi2(4,5))// fixsvac 2 * 4 * 5
-
-//1 args zangvacerest
-//2 args zangvacy bajanum e elem-i ev talis fn-n vornel mer mot orinak` function add e,
-//ayd elemn ery mtnum en u gumarvm;
