@@ -1,5 +1,5 @@
 const count = obj => {
-q = 0;
+const q = 0;
     
     for(let key in obj){
         q++;
